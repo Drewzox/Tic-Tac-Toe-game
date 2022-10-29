@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Roboto:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: #E53F71;
+    color: white;
+    font-weight: bold;
+    height: 71px;
+    font-size: 27px;
+    align-items: center;
+    padding-left: 28px;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+}
+    
+    
+nav ul{
+    list-style-type:none;
+}
+.gamecontainer{
+    /* background-color: yellow; */
+    display: flex;
+    margin: 50px;
+    flex-direction: row;
+    justify-content: center;
+}
+.right{
+    /* background-color: chartreuse; */
+    margin-left:7vw;
+}
+img{
+    height: 0;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    transition: height 1s ease-in-out;
+}
+.left{
+    display: grid;
+    grid-template-columns:repeat(3,10vw);
+    grid-template-rows:repeat(3,10vw) ;  
+    
+}
+.boxtext{
+    display:flex;
+    justify-content: center;
+    font-style:'Roboto', sans-serif;
+
+}
+.box{
+    border:2px solid black;
+    font-size: 9vw;
+    
+}
+.box:hover{
+    background-color:#e091d1;
+    /* box-shadow: 0px 0px 100px 0px rgb(255, 0, 200); */
+    transition: .8s ease;
+    cursor: pointer ;
+}
+.bt-0{
+    border-top: 0;
+}
+.bl-0
+{
+    border-left: 0;
+}
+.br-0{
+    border-right: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+#reset{
+    margin-left: 10vh;
+    margin-top: 10vh;
+    padding: 2vh 10vh;
+    border: 2px solid #56B6C4;
+    background-color: #56B6C4;
+    border-radius: 5px;
+    cursor:pointer;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+#reset:hover
+{
+    background-color: #1c8fa0;
+   
+}
+.info{
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 950px) {
+   .gamecontainer{
+    flex-wrap: wrap;
+   }
+   .right{
+    margin-top: 134px;
+   }
+   .right h1{
+    font-size: 2rem;
+   }
+   .left
+   {
+
+    grid-template-columns:repeat(3,20vw);
+    grid-template-rows:repeat(3,20vw);
+
+  }
+}
